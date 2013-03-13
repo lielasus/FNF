@@ -1,0 +1,74 @@
+/*
+ Description: A Theme for the Fight and Fitness Mobile App
+*/
+
+
+/* =Global
+----------------------------------------------- */
+
+body {
+	width:100%;
+	background-image:url("../img/BG.png");
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+header {
+	width:100%;
+}
+
+content {
+	width:100%;
+	float:center;
+}
+
+li {
+	width:100%;
+	margin-left:20%;
+	text-align:left;
+	font-size:2em;
+	text-decoration:none;
+}
+
+
+/* Links */
+
+a {
+	color:#ff6c00;
+	text-decoration:none;
+}
+a:focus,
+a:active,
+a:hover {
+	color: #1873a1;
+	background-color:#ff6c00;
+	text-decoration:none;
+}
+
+
+/* =Footer
+----------------------------------------------- */
+
+#footer {
+	color:#FFFFFF;
+	font-size:.8em;
+}
+
+/* =Swipe
+----------------------------------------------- */
+
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
