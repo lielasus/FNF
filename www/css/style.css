@@ -7,20 +7,72 @@
 ----------------------------------------------- */
 
 body {
+	-webkit-text-size-adjust:none;
 	width:100%;
+  background-color:#000000;
 	background-image:url("../img/BG.png");
+  background-repeat: no-repeat;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	min-height:100%;
+  min-width:100%
 }
 
+/* =List
+----------------------------------------------- */
 
 header {
-	width:100%;
 }
+
+
+
+/* =Misc (sweet comments, huh)
+----------------------------------------------- */
+
+#logo {
+  background-image:url("../img/title.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top:2px;
+  margin-bottom:2px;
+  min-height:60px;
+  min-width:100%
+} 
+
+#schedule {
+  font-size:1em;
+  text-align:left;
+  color:#FFFFFF;
+  margin-left:12%;
+  margin-right:12%;
+  min-height:100%;
+}
+
+#weekday {
+  text-align:left;
+  font-size:1.5em;
+  font-variant:small-caps;
+  font-weight:bold;
+  color:#e95515;
+  margin-left:8%;
+  margin-right:8%;
+}
+
+#pagename {
+  text-align:center;
+  font-size:.8em;
+  font-variant:small-caps;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+
 
 content {
 	width:100%;
 	float:center;
 }
+
+/* =List
+----------------------------------------------- */
 
 li {
 	width:100%;
@@ -30,8 +82,30 @@ li {
 	text-decoration:none;
 }
 
+/* =Text
+----------------------------------------------- */
 
-/* Links */
+h1 {
+  font-size:1em;
+  margin:50px 0 15px;
+  text-align:center;
+  color:#212121;
+}
+h2 {
+  font-size:2em;
+  font-weight:bold;
+  color:#3c3c3c;
+  margin:20px 10px 10px;
+}
+small {
+  margin:0 10px 30px;
+  display:block;
+  font-size:.6em;
+}
+
+
+/* =Links
+----------------------------------------------- */
 
 a {
 	color:#ff6c00;
@@ -50,25 +124,34 @@ a:hover {
 ----------------------------------------------- */
 
 #footer {
-	color:#FFFFFF;
-	font-size:.8em;
+  background-image: -webkit-linear-gradient(bottom, #cf550c 0%, #e87315 97.49%, #ffa563 98.24%, #ffa563 100%);
+  background-color:#e95515;
+  min-height:100px;
+  min-width:100%;
+  padding-top:20px;
+  margin-left:-6px;
+  margin-right:-6px;
+  margin-top:40px;
+  margin-bottom:-20px;
+  text-align: center;
+  color:#FFFFFF;
+  font-size:.8em;
 }
 
 /* =Swipe
 ----------------------------------------------- */
 
-
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
+#mySwipe div b {
+  display:block;
+  font-weight:bold;
+  color:#14ADE5;
+  font-size:20px;
+  text-align:center;
+  margin:10px;
+  padding:100px 10px;
+  box-shadow: 0 5px #000000;
+  background: #000000;
+  border-radius: 3px;
+  border: 1px solid;
+  border-color: #000000 #000000 #000000;
 }
