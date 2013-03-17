@@ -32,3 +32,5 @@
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
 
 </widget>
+
+<plugin name="InAppBrowser" value="CDVInAppBrowser" />
