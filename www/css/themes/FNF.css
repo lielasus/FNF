@@ -1020,4 +1020,36 @@ a.ui-link-inherit {
 	outline-width: 1px;
 	outline-style: auto;
 }
+
+
+/* Popup Panel: http://jquerymobile.com/demos/1.2.1/docs/pages/popup/popup-panels.html
+-----------------------------------------------------------------------------------------------------------*/
+
+#PopupButton {
+	text-align: right;
+}
+
+#popupPanel-popup {
+    left: 0 !important;
+    right: auto !important;
+}
+#popupPanel {
+    width: 480px;
+    border: 1px solid #000;
+    background: rgba(0,0,0,.5);
+    margin: -1px 0;
+}
+#popupPanel .ui-btn {
+    margin: 2em 15px;
+}
+
+/* Full screen width images
+-----------------------------------------------------------------------------------------------------------*/
+
+.banner {
+    width  : 100%;
+    height : auto;
+}
+
+
 			
