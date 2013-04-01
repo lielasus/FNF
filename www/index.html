@@ -3,13 +3,12 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
   <title>FightAndFitness</title>
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css"/>
-   <link rel="stylesheet" href="css/themes/FNF.css"/> 
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
-  <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+  <link rel="stylesheet" href="css/themes/FNF.css"/>
 </head>
+
 <body>
 
 <!-- 1 Top Menu /////////////////////////////////////////////// 1 -->
@@ -339,17 +338,54 @@
 		<h1>Wallpapers</h1>
 	</div><!-- /header -->
 
-		<div data-role="content" data-theme="b">	
+		<div data-role="content" data-theme="b">
 
-			<img class="banner" src="images/Wallpaper.png" alt="Wallpaper">	
+			<div id='slider' class='swipe'>
+			  	<div class='swipe-wrap'>
+			    	<div><b><img class="wallpaper" src="wallpapers/FNF01.png" alt="FightAndFitness"></b></div>
+			    	<div><b><img class="wallpaper" src="wallpapers/FNF02.png" alt="FightAndFitness"></b></div>
+			    	<div><b><img class="wallpaper" src="wallpapers/FNF03.png" alt="FightAndFitness"></b></div>
+			    	<div><b><img class="wallpaper" src="wallpapers/FNF04.png" alt="FightAndFitness"></b></div>
+			  	  	<div><b><img class="wallpaper" src="wallpapers/FNF05.png" alt="FightAndFitness"></b></div>
+			    	<div><b><img class="wallpaper" src="wallpapers/FNF06.png" alt="FightAndFitness"></b></div>
+			  	</div>
 
-	</div><!-- /content -->
+			  	<div style='text-align:center;padding-top:20px;'>  
+  					<button onclick='mySwipe.prev()'>prev</button> 
+  					<button onclick='mySwipe.next()'>next</button>
+				</div>
+
+			</div>
+
+
+		</div><!-- /content -->   
 	
 	<div data-role="footer" data-theme="b">
 		<h4>123 S. Van Ness, San Francisco, CA</h4>
 	</div><!-- /footer -->
+
 </div><!-- /page wallpapers -->
 
 </body>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+	<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/swipe.js"></script>
+
+	<script>
+	// pure JS
+	//var elem = document.getElementById('mySwipe');
+	window.mySwipe = Swipe(document.getElementById('slider'));
+	  // startSlide: 4,
+	  // auto: 3000,
+	  //continuous: true,
+	  // disableScroll: true,
+	  // stopPropagation: true,
+	  // callback: function(index, element) {},
+	  // transitionEnd: function(index, element) {}
+	// with jQuery
+	// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+	</script>
 
 </html>
